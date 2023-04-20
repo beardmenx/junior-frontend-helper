@@ -1,0 +1,131 @@
+.technology__section {
+  margin-bottom: 50px;
+}
+
+.technology__title {
+  font-family: $fontFamily;
+  font-weight: 900;
+  font-size: 30px;
+  color: $main-color2;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  animation-name: leftToRight;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.technology__text,
+.technology__content-text {
+  font-family: $fontFamily;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding-bottom: 30px;
+  animation-name: rightToLeft;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.technology__images {
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: -30px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-family: $fontFamily;
+  font-weight: 900;
+  font-size: 24px;
+  color: $main-color2;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  animation-name: leftToRight;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.technology__item {
+  width: 240px;
+  max-height: 100%;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 10px 0;
+    color: $main-color2;
+  }
+
+  &-img {
+    width: 130px;
+    height: 130px;
+    display: block;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  &-text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &-link:hover {
+    color: $main-color2;
+  }
+  &-link-read {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 20px;
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 5px 10px;
+  }
+  &-link-read:hover {
+    background-color: $main-color2;
+    color: $main-color;
+    border-radius: 10px;
+  }
+}
